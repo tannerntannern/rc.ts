@@ -21,6 +21,7 @@
     "@types/node": "^10.12.23",
     "typescript": "^3.3.3"
   },
+  "keywords": ["typescript", "runtime config", "rc", "loader", "config loader"],
   "repository": "https://github.com/tannerntannern/rc.ts.git",
   "author": "Tanner Nielsen <tannerntannern@gmail.com>",
   "license": "MIT"

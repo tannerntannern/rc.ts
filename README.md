@@ -29,6 +29,7 @@ $ yarn add rc.ts io-ts
 ```typescript
 import * as t from 'io-ts';
 
+// Don't be swayed by this! It actually integrates with TS very well
 export let schema = t.type({
   name: t.string,
   age: t.number
