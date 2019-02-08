@@ -1,6 +1,6 @@
 {
   "name": "rc.ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A no-nonsense runtime-configuration loader and validator for TypeScript applications.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,7 +21,13 @@
     "@types/node": "^10.12.23",
     "typescript": "^3.3.3"
   },
-  "keywords": ["typescript", "runtime config", "rc", "loader", "config loader"],
+  "keywords": [
+    "typescript",
+    "runtime config",
+    "rc",
+    "loader",
+    "config loader"
+  ],
   "repository": "https://github.com/tannerntannern/rc.ts.git",
   "author": "Tanner Nielsen <tannerntannern@gmail.com>",
   "license": "MIT"
