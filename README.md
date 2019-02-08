@@ -1,4 +1,7 @@
 # rc.ts
+[![npm version](https://badgen.net/npm/v/rc.ts)](https://npmjs.com/package/rc.ts)
+[![bundle size](https://badgen.net/bundlephobia/min/rc.ts?color=green)]()
+
 There's an ungodly number of similar packages, so I will keep the introduction brief:
 
 `rc.ts` is a no-nonsense runtime-configuration loader and validator for TypeScript applications.  All you have to do is define a schema for your config and `rc.ts` will use it for _both compile time and runtime_ type-safety when loading a config file.
