@@ -1,6 +1,6 @@
 {
   "name": "rc.ts",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "A no-nonsense runtime-configuration loader and validator for TypeScript applications.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,7 +11,8 @@
     "clean": "rm -rf dist",
     "build": "tsc",
     "build-clean": "yarn clean && yarn build",
-    "watch": "yarn build -- --watch"
+    "watch": "yarn build -- --watch",
+    "version": "yarn build-clean"
   },
   "peerDependencies": {
     "io-ts": "^1.8.1"

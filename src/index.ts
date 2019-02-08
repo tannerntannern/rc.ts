@@ -23,9 +23,8 @@ export default function<Schema extends Type<any>>(schema: Schema) {
 	const loadConfigObject = (data: unknown): TypeOf<Schema> => {
 		const result = schema.decode(data);
 
-		if (isErrors(result.value)) {
+		if (isErrors(result.value))
 			throw new Error(PathReporter.report(result).join('\n'));
-		}
 		else
 			return result.value;
 	};
