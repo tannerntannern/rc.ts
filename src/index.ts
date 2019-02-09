@@ -1,4 +1,4 @@
-import {Type, TypeOf, Errors} from 'io-ts';
+import {Type, TypeOf, Errors, success} from 'io-ts';
 import {PathReporter} from 'io-ts/lib/PathReporter';
 
 const isErrors = (result: any): result is Errors => {
@@ -38,4 +38,19 @@ export default function<Schema extends Type<any>>(schema: Schema) {
 		loadConfigFile: loadConfigFile,
 		validateConfigObject: validateConfigObject
 	};
+};
+
+export const withDefault = <A, O, I>(codec: Type<A, O, I>, defaultValue: A): Type<A, O, I> => {
+	const name = `default(${codec.name})`;
+	const isDefaultValid = codec.is(defaultValue);
+
+	return new Type<A, O, I>(
+		name,
+		codec.is,
+		(i, context) => {
+			const validation = codec.validate(i, context);
+			return validation.isLeft() && isDefaultValid && (i === undefined || i === null) ? success(defaultValue) : validation
+		},
+		codec.encode
+	);
 };
