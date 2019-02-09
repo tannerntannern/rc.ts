@@ -1,6 +1,6 @@
 # rc.ts
 [![npm version](https://badgen.net/npm/v/rc.ts)](https://npmjs.com/package/rc.ts)
-[![bundle size](https://badgen.net/bundlephobia/min/rc.ts?color=green)]()
+[![bundle size](https://badgen.net/bundlephobia/min/rc.ts?color=green)](https://bundlephobia.com/result?p=rc.ts)
 
 There's an ungodly amount of similar packages, so I will keep the introduction brief:
 
