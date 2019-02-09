@@ -7,12 +7,20 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.23.tgz#308a3acdc5d1c842aeadc50b867d99c46cfae868"
   integrity sha512-EKhb5NveQ3NlW5EV7B0VRtDKwUfVey8LuJRl9pp5iW0se87/ZqLjG0PMf2MCzPXAJYWZN5Ltg7pHIAf9/Dm1tQ==
 
-fp-ts@^1.0.0:
+fp-ts@^1.0.0, fp-ts@^1.0.1:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/fp-ts/-/fp-ts-1.13.0.tgz#004803434e6c92021232746a621d3c2429c3d5cc"
   integrity sha512-QDPtCkuLay+dX3zinnvt0ER+j8mdWZZSpM//DIY3GycgwUTDPBKFD7CxX5DU/mIDstcWqGuuUSrMNtB6MWluCQ==
 
-io-ts@^1.8.1:
+io-ts-reporters@^0.0.21:
+  version "0.0.21"
+  resolved "https://registry.yarnpkg.com/io-ts-reporters/-/io-ts-reporters-0.0.21.tgz#b0be3eec37a3d7da77aeafa257c68bd2afbbc4af"
+  integrity sha512-HRAYn4IVkRbnL9Uy9WDB/1+0lorRZvE239LMdc0ditN8OhsPg+0vKnqchkGhZ/vyTzLC5CZLO4AZ4xreirkIkA==
+  dependencies:
+    fp-ts "^1.0.1"
+    io-ts "^1.0.2"
+
+io-ts@^1.0.2:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/io-ts/-/io-ts-1.8.1.tgz#8e4534e5eb491f0b624394ba42085f68dc84268b"
   integrity sha512-MhFHaBbzw1MK6s16QPW8Tgkj5SW5wBjeQERsk5hupfBSC6WQeQ4MoPACPbm7LUUXU8jZJaqrVGuBTWqCuZYP0A==

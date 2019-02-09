@@ -1,5 +1,5 @@
 import {Type, TypeOf, Errors, success} from 'io-ts';
-import {PathReporter} from 'io-ts/lib/PathReporter';
+import {reporter as report} from 'io-ts-reporters';
 
 const isErrors = (result: any): result is Errors => {
 	try {
@@ -15,7 +15,7 @@ export default function<Schema extends Type<any>>(schema: Schema) {
 		const result = schema.decode(data);
 
 		if (isErrors(result.value))
-			return PathReporter.report(result);
+			return report(result);
 		else
 			return true;
 	};
@@ -24,7 +24,7 @@ export default function<Schema extends Type<any>>(schema: Schema) {
 		const result = schema.decode(data);
 
 		if (isErrors(result.value))
-			throw new Error(PathReporter.report(result).join('\n'));
+			throw new Error(report(result).join('\n'));
 		else
 			return result.value;
 	};

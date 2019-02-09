@@ -17,6 +17,9 @@
   "peerDependencies": {
     "io-ts": "^1.8.1"
   },
+  "dependencies": {
+    "io-ts-reporters": "^0.0.21"
+  },
   "devDependencies": {
     "@types/node": "^10.12.23",
     "typescript": "^3.3.3"
