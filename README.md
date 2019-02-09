@@ -17,6 +17,8 @@ There's an ungodly amount of similar packages, so I will keep the introduction b
 * It relies on [io-ts](https://github.com/gcanti/io-ts), which may be a deal-breaker for some folks, but I would encourage them to give it a chance.
 * Since the design is very minimal, only `.json` and `.js` config formats are supported (out of the box, at least).  Sorry, YAML enthusiasts.
 
+`rc.ts` is essentially just a thin wrapper for `io-ts` that makes very simple and convenient to do runtime-config validation.  If you're used to working with `io-ts` directly, this package may not be necessary for you.
+
 ## Installation
 You can install `rc.ts` via npm or yarn.  You will also need to install the `io-ts` peer dependency.
 
