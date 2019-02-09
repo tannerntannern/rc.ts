@@ -70,7 +70,7 @@ When you use the above code in your project, the `loadConfigFile()` function is 
 Additionally, if you load a bad config file, a descriptive error will be thrown:
 
 ```
-Invalid value 0 supplied to : { name: string, age: number }/name: string
+Error: Expecting number at age but instead got: undefined.
 ```
 
 ## More Advanced Use
